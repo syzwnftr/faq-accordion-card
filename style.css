@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --darkDesBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --darkGrayBlue: hsl(237, 12%, 33%);
+  --darkGrayBlue: hsl(240, 6%, 50%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {
+  outline: 1px solid black;
+  max-width: 90%;
+  margin: 3rem auto;
+}
+
+.heroImg {
+  outline: 1px solid red;
+  text-align: center;
+}
+
+.womenOnlineMobile {
+  /* outline: 1px solid green; */
+  margin-right: 1.5rem;
+}
+
+.background {
+  margin-top: -10rem;
+  /* margin-left: 2rem; */
+}
+
+.faq {
+  background-color: white;
+  margin-top: -7rem;
+  padding: 8rem 1.2rem 5rem 1.2rem;
+}
+
+.faq h1 {
+  text-align: center;
+  color: var(--darkDesBlue);
+  margin-bottom: 2rem;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowIconDiv {
+  outline: 1px solid pink;
+}
+
+.col p {
+  font-size: 0.88rem;
+}
+
+.answer {
+  display: none;
+}
