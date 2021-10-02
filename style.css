@@ -20,30 +20,31 @@ body {
 }
 
 .container {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   max-width: 90%;
   margin: 3rem auto;
 }
 
 .heroImg {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   text-align: center;
 }
 
 .womenOnlineMobile {
-  /* outline: 1px solid green; */
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 .background {
   margin-top: -10rem;
-  /* margin-left: 2rem; */
+  margin-left: 2rem;
 }
 
 .faq {
+  /* outline: 1px solid blue; */
+  border-radius: 1.5rem;
   background-color: white;
   margin-top: -7rem;
-  padding: 8rem 1.2rem 5rem 1.2rem;
+  padding: 8rem 1.2rem 2rem 1.2rem;
 }
 
 .faq h1 {
@@ -53,18 +54,48 @@ body {
 }
 
 .col {
+  margin-bottom: 1rem;
+}
+
+.box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
-.arrowIconDiv {
+/* .arrowIconDiv {
   outline: 1px solid pink;
+} */
+
+.arrowIcon {
+  cursor: pointer;
 }
 
-.col p {
+.arrowIconRotate {
+  transform: rotate(180deg);
+}
+
+p {
   font-size: 0.88rem;
+  font-size: 400;
+  color: var(--darkGrayBlue);
+}
+
+.changeColor {
+  color: var(--darkDesBlue);
+  font-weight: 700;
+  /* color: red; */
 }
 
 .answer {
   display: none;
+  margin-top: 1rem;
+}
+
+.showAnswer {
+  display: block;
+}
+
+.borderBottom {
+  border: 1px solid var(--lightGrayishBlue);
 }
