@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 .container {
@@ -28,6 +28,10 @@ body {
 .heroImg {
   /* outline: 1px solid red; */
   text-align: center;
+}
+
+.desktop {
+  display: none;
 }
 
 .womenOnlineMobile {
@@ -63,10 +67,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* .arrowIconDiv {
-  outline: 1px solid pink;
-} */
-
 .arrowIcon {
   cursor: pointer;
 }
@@ -84,7 +84,6 @@ p {
 .changeColor {
   color: var(--darkDesBlue);
   font-weight: 700;
-  /* color: red; */
 }
 
 .answer {
@@ -98,4 +97,70 @@ p {
 
 .borderBottom {
   border: 1px solid var(--lightGrayishBlue);
+}
+
+@media (min-width: 25rem) {
+  .container {
+    max-width: 22.5rem;
+  }
+}
+
+@media (min-width: 81.25rem) {
+  body {
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 60rem;
+    display: flex;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .heroImg {
+    flex-basis: 40%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-left: -2rem; */
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    position: relative;
+  }
+
+  .womenOnlineDesktop {
+    width: 100%;
+  }
+
+  .boxDesktop {
+    position: absolute;
+    top: 6rem;
+    left: -4rem;
+  }
+
+  .faq {
+    flex-basis: 60%;
+    width: 100%;
+    margin-top: 0;
+    padding: 3rem;
+    border-radius: 0;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .col {
+    width: 100%;
+  }
 }
