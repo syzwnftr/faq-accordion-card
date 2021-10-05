@@ -13,7 +13,11 @@ const answerFour = document.querySelector('.a-four');
 const questionFive = document.querySelector('.q-five');
 const answerFive = document.querySelector('.a-five');
 
-
+const colOne = document.querySelector('.col-one');
+const colTwo = document.querySelector('.col-two');
+const colThree = document.querySelector('.col-three');
+const colFour = document.querySelector('.col-four');
+const colFive = document.querySelector('.col-five');
 
 
 const arrowIcon = document.querySelector('.arrowIcon');
@@ -24,7 +28,7 @@ const arrowIconFive = document.querySelector('.icon-five');
 
 let count, countTwo, countThree, countFour, countFive = 0;
 
-arrowIcon.addEventListener('click', function () {
+colOne.addEventListener('click', function () {
     if(count === 0) {
         question.classList.add('changeColor');
         answer.classList.add('showAnswer');
@@ -38,7 +42,7 @@ arrowIcon.addEventListener('click', function () {
     } 
 });
 
-arrowIconTwo.addEventListener('click', function () {
+colTwo.addEventListener('click', function () {
     if(countTwo === 0) {
         questionTwo.classList.add('changeColor');
         answerTwo.classList.add('showAnswer');
@@ -52,7 +56,7 @@ arrowIconTwo.addEventListener('click', function () {
     }
 });
 
-arrowIconThree.addEventListener('click', function () {
+colThree.addEventListener('click', function () {
     if(countThree === 0) {
         questionThree.classList.add('changeColor');
         answerThree.classList.add('showAnswer');
@@ -66,7 +70,7 @@ arrowIconThree.addEventListener('click', function () {
     }
 });
 
-arrowIconFour.addEventListener('click', function () {
+colFour.addEventListener('click', function () {
     if(countFour === 0) {
         questionFour.classList.add('changeColor');
         answerFour.classList.add('showAnswer');
@@ -80,7 +84,7 @@ arrowIconFour.addEventListener('click', function () {
     }
 });
 
-arrowIconFive.addEventListener('click', function () {
+colFive.addEventListener('click', function () {
     if(countFive === 0) {
         questionFive.classList.add('changeColor');
         answerFive.classList.add('showAnswer');
