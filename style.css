@@ -73,6 +73,14 @@ main {
   flex-basis: 95%;
 }
 
+.question {
+  transition: 0.3s;
+}
+
+.question:hover {
+  color: var(--darkDesBlue);
+}
+
 .arrowIconDiv {
   flex-basis: 5%;
   text-align: center;
@@ -133,6 +141,7 @@ p {
     border-radius: 1.5rem;
     margin: 0;
     padding: 2rem;
+    /* outline: 1px solid red; */
   }
 
   .heroImg {
@@ -145,7 +154,8 @@ p {
     background-size: contain;
     background-position: center;
     background-color: white;
-    /* margin-left: -2rem; */
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
   }
 
   .mobile {
