@@ -63,6 +63,10 @@ main {
   cursor: pointer;
 }
 
+.col:hover .arrowIcon {
+  transform: rotate(180deg);
+}
+
 .box {
   display: flex;
   justify-content: space-between;
@@ -90,10 +94,6 @@ main {
   cursor: pointer;
   width: 70%;
   transition: 0.3s;
-}
-
-.arrowIcon:hover {
-  transform: rotate(180deg);
 }
 
 .arrowIconRotate {
@@ -171,7 +171,7 @@ p {
   }
 
   .womenOnlineDesktop {
-    width: 100%;
+    max-width: 100%;
   }
 
   .boxDesktop {
