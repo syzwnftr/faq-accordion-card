@@ -78,7 +78,7 @@ main {
 }
 
 .question:hover {
-  color: var(--darkDesBlue);
+  color: var(--softRed);
 }
 
 .arrowIconDiv {
@@ -89,6 +89,11 @@ main {
 .arrowIcon {
   cursor: pointer;
   width: 70%;
+  transition: 0.3s;
+}
+
+.arrowIcon:hover {
+  transform: rotate(180deg);
 }
 
 .arrowIconRotate {
@@ -127,7 +132,6 @@ p {
 
 @media (min-width: 81.25rem) {
   main {
-    outline: 1px solid red;
     min-height: 100vh;
     padding: 0;
     display: flex;
@@ -136,13 +140,11 @@ p {
   }
 
   .container {
-    max-width: 60rem;
+    max-width: 55rem;
     display: flex;
     border-radius: 1.5rem;
     margin: 0;
-    padding: 2rem;
     flex-basis: 100%;
-    /* outline: 1px solid red; */
   }
 
   .heroImg {
@@ -185,8 +187,6 @@ p {
     border-radius: 0;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-    flex-grow: 0;
-    flex-shrink: 1;
   }
 
   .questionAnswer {
