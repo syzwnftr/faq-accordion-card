@@ -141,6 +141,7 @@ p {
     border-radius: 1.5rem;
     margin: 0;
     padding: 2rem;
+    flex-basis: 100%;
     /* outline: 1px solid red; */
   }
 
@@ -184,6 +185,8 @@ p {
     border-radius: 0;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
+    flex-grow: 0;
+    flex-shrink: 1;
   }
 
   .questionAnswer {
