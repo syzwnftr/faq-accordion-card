@@ -178,6 +178,17 @@ p {
     position: absolute;
     top: 6rem;
     left: -4rem;
+    animation: moveUp 4.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
   }
 
   .faq {
